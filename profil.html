@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Klinik Sehat</title>
+	<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+	<section class="banner" id="sec">
+		
+		<header>
+			<ul>
+			  <li><a class="active" href="index.html">Home</a></li>
+			  <li><a href="unit.html">Daftar Konsultasi</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			</ul>
+			<img class="ks" src="images/logo.png">
+			<a href="index.html" class="logo"> KLINIK SEHAT</a>
+		</header>
+		
+		<div class="content">
+			<div class="tulisan">
+				<img class="profil" src="images/profil.png">
+				<table>
+				<tr>
+					<td colspan="2" style="width: 250px; text-align: left;"><h5 style="color: #3CED83; font-size: 2em;">Nama Pasien</h5></td>
+				</tr>
+				<tr>
+					<td style="width: 200px; height: 25px; text-align: left;"><h5>18, Pria</h5></td>
+				</tr>
+				</table>
+			</div>
+			
+			<div class="jadwals">
+				<table>
+				<tr>
+					<td>
+					 Nama
+					 </td>
+					 <td id="demo">
+					 Adi
+					 </td>
+					 <td>
+					 <button class="tombol" onclick="myFunction()">ubah</button>
+					 </td>
+					<td>
+					<input type="text" id="myText" value="Nama">
+					 </td>
+				 </tr>
+				 </table>
+			</div>
+			
+			<div class="jadwals">
+				<table>
+				<tr>
+					<td>
+					 Tanggal Lahir
+					 </td>
+					 <td id="demotanggal">
+					 30/04/1999
+					 </td>
+					 <td>
+					 <button class="tombol" onclick="myFunction2()">ubah</button>
+					 </td>
+					<td>
+					<input type="date" id="myText2" value="tanggal">
+					 </td>
+				 </tr>
+				 </table>
+			</div>
+			
+			<div class="jadwals">
+				<table>
+				<tr>
+					<td>
+					 Jenis Kelamin
+					 </td>
+					 <td id="demogender">
+					 wanita
+					 </td>
+					 <td>
+					 <button class="tombol" onclick="myFunction3()">ubah</button>
+					 </td>
+					<td>
+					<input type="radio" id="myText3" name="gender" value="pria" required><label for="female"><b> pria </b></label>     	
+					<input type="radio" id="myText3" name="gender" value="wanita" required><label for="male"><b> wanita</b></label>
+					 </td>
+				 </tr>
+				 </table>
+			</div>
+			<br>
+			<div class="ok" style="text-align: center;"><a href="index.html" onclick="terkirim3()">Simpan</a></div>
+			
+			
+		</div>
+		
+	</section>
+	
+	<script type="text/javascript" src="animasi.js">
+	</script>
+	
+</body>		
+</html>

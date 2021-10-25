@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=NTR:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'NTR';
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 100px;
+	z-index: 10000;
+	transition: 0.6s;
+}
+
+header .logo{
+	position: absolute;
+	font-weight: 700;
+	color: #3CED83;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+	left: 160px;
+}
+
+header .ks{
+	position: absolute;
+}
+
+.banner{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 10px;
+	background: url(images/bg.png);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	transition: 0.5s;
+	z-index: 2;
+}
+
+.banner.active{
+	transform: translateX(-400px);
+}
+
+.content{
+	max-width: 50%;
+	padding-top: 80px;
+	padding-left: 100px;
+}
+
+@media (max-width: 767px){
+	header {
+		padding: 20px 50px;
+	}
+	.banner {
+		padding: 100px 50px 150px;
+	}
+	.banner h2{
+		font-size: 1.8em;
+	}
+	.banner .content p,
+	.banner .content a{
+		font-size: 1em;
+	}
+	.banner.active{
+		transform: translateX(-250px);
+	}
+}
+
+.contact-section{
+	padding: 30px 0;
+}
+
+.contact-section h1{
+	text-align: left;
+	color: #3CED83;
+	font-size: 3.5em;
+}
+
+.contact-section h4{
+	text-align: left;
+	color: #3CED83;
+}
+
+.contact-form{
+	max-width: 600px;
+	margin: auto;
+	padding: 0px;
+	overflow: hidden;
+}
+
+.contact-form-text{
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 15px 0;
+	border: 2px solid #3CED83;
+	background: #E0E0E0;
+	border-radius: 22.5px;
+	padding: 20px 40px;
+	outline: none;
+	color: #000;
+	transition: 0.5s;
+}
+
+.contact-form-text1{
+	width: 47.5%;
+	box-sizing: border-box;
+	margin: 0px 5px;
+	border: 2px solid #3CED83;
+	background: #E0E0E0;
+	border-radius: 22.5px;
+	padding: 20px 40px;
+	outline: none;
+	color: #000;
+	transition: 0.5s;
+}
+
+.contact-form-text:focus{
+	box-shadow: 0 0 10px 1px #3CED83;
+}
+
+.contact-form-text1:focus{
+	box-shadow: 0 0 10px 1px #3CED83;
+}
+
+select {
+  padding: 4px;
+  width: 20%;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+input[type="radio"]{
+  margin: 0 10px 0 10px;
+}
+
+.gender{
+	float: right;
+	margin-right: 20px;
+}
+
+.contact-form-btn{
+	float: right;
+	border: 1px solid #27AE60;
+	background: #27AE60;
+	border-radius: 22.5px;
+	color: #fff;
+	padding: 5px 70px;
+	cursor: pointer;
+	transition: 0.5s;
+	font-size: 1.2em;
+	font-weight: 500;
+	clear: both;
+	margin-top: 50px;
+}
+
+.contact-form-btn:hover{
+	background: #fff;
+	color: #27AE60;
+}
+.mySlides {
+	display: none;
+}
+
+.satu{
+	position: relative;
+	float: right;
+	padding: 100px 0px 0px 300px;
+}
+
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #fff;
+  font-size: 15px;
+  padding: 12px 10px;
+  position: absolute;
+  bottom: 8px;
+  top: 250px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 5px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

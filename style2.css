@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=NTR:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'NTR';
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 100px;
+	z-index: 10000;
+	transition: 0.6s;
+	position: fixed;
+}
+
+header .logo{
+	position: absolute;
+	font-weight: 700;
+	color: #3CED83;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+	left: 1000px;
+}
+
+header .ks{
+	position: absolute;
+	left: 940px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  top: 35px;
+  width: 100%;
+}
+
+p{
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3CED83;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+  border-bottom: 3px solid #3CED83;
+}
+
+.active {
+  border-bottom: 3px solid #3CED83;
+}
+
+.banner{
+	position: relative;
+	padding-top: 130px;
+	padding-right: 150px;
+	background: #fff;
+	background-size: cover;
+	align-items: center;
+	transition: 0.5s;
+	z-index: 2;
+}
+
+.banner.active{
+	transform: translateX(-400px);
+}
+
+.content{
+	max-width: 100%;
+	padding-top: 0px;
+	padding-left: 100px;
+}
+
+@media (max-width: 767px){
+	header {
+		padding: 20px 50px;
+	}
+	.banner {
+		padding: 100px 50px 150px;
+	}
+	.banner h2{
+		font-size: 1.8em;
+	}
+	.banner .content p,
+	.banner .content a{
+		font-size: 1em;
+	}
+	.banner.active{
+		transform: translateX(-250px);
+	}
+}
+
+.profil{
+	float: left;
+}
+
+.foto{
+	float: left;
+	width: 70px;
+	height: 70px;
+} 
+
+.tulisan{
+	overflow: auto;
+}
+
+.jadwal{
+	background-color: #F0F0F0;
+	overflow: auto;
+	padding: 10px;
+	margin: 5px 0px;
+}
+
+.jadwals{
+	background-color: #fff;
+	overflow: auto;
+	padding: 10px;
+	margin: 5px 0px;
+	border-bottom: 1px solid #3CED83;
+}
+
+.janji{
+	background-color: #F0F0F0;
+	overflow: auto;
+	padding: 10px;
+	margin: 5px 0px;
+}
+
+.janji2{
+	background-color: #3CED83;
+	overflow: auto;
+	padding: 10px;
+	margin: 5px 0px;
+}
+
+.janji td{
+	width: 600px;
+}
+
+.janji2 td{
+	width: 600px;
+}
+
+td{
+	text-align: center;
+	width: 250px;
+	height: 25px;
+}
+
+.jadwal:hover {
+	background-color: #C4C4C4;
+}
+
+h4{
+	color: #fff;
+	font-size: 2em;
+}
+
+h5{
+	font-size: 1.5em;
+}
+
+.editprofil{
+	border-radius: 25px;
+	background:#3CED83;
+}
+
+.keluar{
+	border-radius: 25px;
+	background:#fff;
+	
+	width: 100px;
+	float: right;
+	padding: 7px;
+	border: 2px solid #3CED83;
+}
+
+.keluar:hover{
+	background:#3CED83;
+	
+}
+
+a{
+	color: #3CED83;
+}
+.keluar:hover a{
+	color: #fff;
+}
+
+.editprofil:hover{
+	background: #27AE60;
+	color: #fff;
+}
+
+.units{
+	position: absolute;
+	top: 140px;
+	left: 300px;
+}
+
+.units button{
+	border: 3px solid #3CED83;
+	border-radius: 30px;
+	width: 180px;
+	height: 180px;
+	cursor: pointer;
+	background: #fff;
+}
+
+.units button:hover{
+  background-color: #ddd;
+}
+
+.tombol{
+	background: #3CED83;
+	border: 1px solid #3CED83;
+	border-radius: 25px;
+	width:200px;
+}
+
+.tombol:hover{
+	background: #fff;
+}
+
+.ok{
+	background: #3CED83; 
+	height: 50px; 
+	font-size: 1.5em;
+	border: 2px solid #3CED83;
+	border-radius: 30px;
+}
+
+.ok:hover{
+	background: #fff; 
+}
+
+.ok a{
+	color: #fff; 
+	text-decoration: none;
+}
+
+.ok:hover a{
+	color: #3CED83; 
+}
+
+.headline{
+	background: #3CED83;
+	color: #fff;
+}
+
+.contact-section{
+	padding: 30px 0;
+}
+
+.contact-section h1{
+	text-align: left;
+	color: #3CED83;
+	font-size: 3.5em;
+}
+
+.contact-section h4{
+	text-align: left;
+	color: #3CED83;
+}
+
+.contact-form{
+	max-width: 600px;
+	margin: auto;
+	padding: 0px;
+	overflow: hidden;
+}
+
+.contact-form-text{
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 15px 0;
+	border: 2px solid #3CED83;
+	background: #E0E0E0;
+	border-radius: 22.5px;
+	padding: 20px 40px;
+	outline: none;
+	color: #000;
+	transition: 0.5s;
+}
+
+.contact-form-text:focus{
+	box-shadow: 0 0 10px 1px #3CED83;
+}
+
+.contact-form-btn{
+	float: right;
+	border: 1px solid #27AE60;
+	background: #27AE60;
+	border-radius: 22.5px;
+	color: #fff;
+	padding: 5px 70px;
+	cursor: pointer;
+	transition: 0.5s;
+	font-size: 1.2em;
+	font-weight: 500;
+	clear: both;
+	margin-top: 50px;
+}
+
+.contact-form-btn:hover{
+	background: #fff;
+	color: #27AE60;
+}
+
